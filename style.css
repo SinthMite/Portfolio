@@ -1,9 +1,23 @@
 *{
     box-sizing: border-box;
     margin: 0%;
-    padding: 0%;
+    padding: 0 1rem;
 }
 body{
-    color: rgb(228, 228, 228);
-    background-color: rgb(27, 26, 26);
-    font-family: 'Libre Franklin', sans-serif;}
+    color: rgba(228, 228, 228);
+    background-color: rgb(35, 35, 35);
+    font-family: 'Libre Franklin', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#header-links{
+    display: flex;
+    list-style-type: none;
+
+}
+#header-links a{
+    text-decoration: none;
+}
