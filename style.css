@@ -5,7 +5,7 @@
 }
 body{
     color: rgba(228, 228, 228);
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(24, 24, 24);
     font-family: 'Libre Franklin', sans-serif;
 }
 header{
@@ -29,11 +29,10 @@ header{
 #aboutMe{
     margin-right: 15rem;
     padding-bottom: 10rem;
-    border-bottom: 0.2rem solid white;
 }
 #short-summary{
     text-align: left;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     margin-bottom: 2rem;
 }
 
@@ -55,4 +54,17 @@ header{
     text-underline-offset: 0.5rem;
     text-decoration-color: rgb(104, 208, 174);
     text-decoration-thickness: 0.2rem;
+    letter-spacing: 0.2rem;
+}
+#skill-list ul{
+    border-top: 0.2rem solid white;
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 1.5rem
+}
+#skill-list li{
+    list-style-type: none;
+    margin-bottom: 2.5rem;
 }
