@@ -12,6 +12,11 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 4rem;
+}
+#logo{
+    font-size: 2rem;
+    font-weight: 900;
 }
 #header-links{
     display: flex;
@@ -20,4 +25,11 @@ header{
 }
 #header-links a{
     text-decoration: none;
+}
+#aboutMe{
+    margin-right: 15rem;
+}
+#short-summary{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
 }
