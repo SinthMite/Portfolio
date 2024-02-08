@@ -9,13 +9,7 @@ body{
     background-repeat: no-repeat;
     font-family: 'Libre Franklin', sans-serif;
 }
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 2rem;
-    margin-bottom: 4rem;
-}
+
 
 header img{
     max-width: 5rem;
@@ -27,9 +21,7 @@ header img{
     font-family: 'Cedarville Cursive', cursive;
 }
 #header-links{
-    display: flex;
     list-style-type: none;
-
 }
 #header-links a{
     text-decoration: none;
@@ -49,7 +41,6 @@ header img{
     text-underline-offset: 1rem;
     text-decoration-color: rgb(208, 104, 179);
     text-decoration-thickness: 0.4rem;
-    white-space: nowrap;
 }
 #me{
     text-align: left;
@@ -69,9 +60,6 @@ header img{
 #skill-list ul{
     border-top: 0.2rem solid rgb(198, 198, 198);
     padding-top: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     font-size: 1.5rem;
     border-bottom: 0.2rem solid rgb(198, 198, 198);
 
@@ -82,3 +70,62 @@ header img{
     flex-direction: column;
     align-items: center;
 }
+@media only screen and (min-width: 769px) {
+    #header-links{
+        display: flex;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    #skill-list ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    }
+    #name{
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #header-links{
+        display: flex;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    #skill-list ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    #name{
+        white-space: nowrap;
+    }
+    
+}
+
+@media only screen and (max-width: 635px) {
+    #logo{
+        text-align: center;
+        font-size: 4rem;
+    }
+    #header-links{
+        display: flex;
+    }
+    header{
+            display: block;
+            flex-direction: row;
+            padding-top: 2rem;
+            margin-bottom: 4rem;
+    }
+}
+
