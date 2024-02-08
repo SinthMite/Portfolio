@@ -1,13 +1,18 @@
 *{
     box-sizing: border-box;
     margin: 0%;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
-body{
+body {
     color: rgb(72, 72, 72);
-    background-image:radial-gradient(rgb(255, 255, 255), rgb(250, 240, 240), rgb(230, 230, 230));
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(250, 240, 240), rgb(230, 230, 230));
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+    
 }
 
 
@@ -27,13 +32,12 @@ header img{
     text-decoration: none;
 }
 #aboutMe{
-    margin-right: 15rem;
     padding-bottom: 10rem;
 }
 #short-summary{
     text-align: left;
-    font-size: 3.3rem;
     margin-bottom: 2rem;
+    min-width: 100%;
 }
 
 #name{
@@ -86,9 +90,7 @@ header img{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     }
-    #name{
-        white-space: nowrap;
-    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -107,25 +109,38 @@ header img{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
-    #name{
-        white-space: nowrap;
+    #short-summary{
+        min-width: 100%;
+        font-size: 3vh;
     }
     
 }
 
 @media only screen and (max-width: 635px) {
     #logo{
-        text-align: center;
+        display: flex;
+        justify-content: center;
         font-size: 4rem;
     }
     #header-links{
         display: flex;
     }
     header{
+            text-align: center;
             display: block;
             flex-direction: row;
             padding-top: 2rem;
             margin-bottom: 4rem;
+    }    
+    #skill-list ul{
+        display: grid;
+        grid-template-columns: 1fr;
     }
+    #short-summary{
+        min-width: 100%;
+        font-size: 1.9rem;
+    }
+#me{
+    min-width: 300px;
 }
-
+}
