@@ -4,19 +4,27 @@
     padding: 0 1rem;
 }
 body{
-    color: rgba(228, 228, 228);
-    background-color: rgb(24, 24, 24);
+    color: rgb(72, 72, 72);
+    background-image:radial-gradient(rgb(255, 255, 255), rgb(250, 240, 240), rgb(230, 230, 230));
+    background-repeat: no-repeat;
     font-family: 'Libre Franklin', sans-serif;
 }
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 2rem;
     margin-bottom: 4rem;
 }
+
+header img{
+    max-width: 5rem;
+
+}
 #logo{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 900;
+    font-family: 'Cedarville Cursive', cursive;
 }
 #header-links{
     display: flex;
@@ -39,9 +47,9 @@ header{
 #name{
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(104, 208, 174);
+    text-decoration-color: rgb(208, 104, 179);
     text-decoration-thickness: 0.4rem;
-
+    white-space: nowrap;
 }
 #me{
     text-align: left;
@@ -50,21 +58,27 @@ header{
 }
 
 #contact{
-    color: white;
+    color: rgb(31, 31, 31);
     text-underline-offset: 0.5rem;
-    text-decoration-color: rgb(104, 208, 174);
+    text-decoration-color: rgb(208, 104, 179);
     text-decoration-thickness: 0.2rem;
     letter-spacing: 0.2rem;
+    white-space: nowrap;
 }
+
 #skill-list ul{
-    border-top: 0.2rem solid white;
+    border-top: 0.2rem solid rgb(198, 198, 198);
     padding-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    border-bottom: 0.2rem solid rgb(198, 198, 198);
+
 }
 #skill-list li{
     list-style-type: none;
-    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
