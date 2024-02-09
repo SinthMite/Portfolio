@@ -31,6 +31,14 @@ header img{
 #header-links a{
     text-decoration: none;
 }
+@keyframes turn{
+    from{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform:rotateY(360deg);
+    }
+}
 #aboutMe{
     padding-bottom: 10rem;
 }
