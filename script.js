@@ -1,13 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-let headerLinks = document.querySelectorAll('.header-socials');
+    let headerLinks = document.querySelectorAll('.header-socials');
 
-function spin(event) {
-    event.target.style.animationName = 'turn';
-    event.target.style.animationDuration = '1s';
+    function spin(event) {
+        // Remove existing animation
+        event.target.style.animation = 'none';
+        
+        // Trigger reflow to restart the animation
+        void event.target.offsetWidth;
 
-}
-headerLinks.forEach(function (link) {
-    link.addEventListener('mouseover', spin);
-});
+        // Apply the spin animation
+        event.target.style.animation = 'turn 1000ms';
+    }
+
+    headerLinks.forEach(function (link) {
+        link.addEventListener('mouseover', spin);
+    });
 });
