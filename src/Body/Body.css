@@ -6,9 +6,11 @@
     --background-clip: text;
     --text-color: transparent;
 }
-body{
+
+body {
     font-family: 'Arial Narrow Bold', sans-serif;
 }
+
 
 .body-content span {
     background: linear-gradient(var(--gradient-angle), var(--gradient-color-1), var(--gradient-color-2));
@@ -17,26 +19,10 @@ body{
     color: var(--text-color);
 }
 
-.body-content p{
+.body-content p {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.5;
-
-}
-
-.profile-content img{
-    width: 250px;
-    border-radius: 50%;
-    border: 3px solid ;
-    animation: aura 30s infinite;
-}
-
-
-.profile-content img {
-    width: 250px;
-    border-radius: 50%;
-    border: 3px solid;
-    animation: aura 30s infinite;
 }
 
 .profile-content img {
@@ -44,34 +30,25 @@ body{
     border-radius: 50%;
     border: 3px solid;
     animation: aura 30s infinite;
+    margin-top: 8rem;
 }
 
-.profile-content img {
-    width: 250px;
-    border-radius: 50%;
-    border: 3px solid;
-    animation: aura 30s infinite;
-}
-
-.profile-content img {
-    width: 250px;
-    border-radius: 50%;
-    border: 3px solid;
-    animation: aura 30s infinite;
+.description-article{
+    font-size: 1.5rem;
 }
 
 @keyframes aura {
     0% {
         box-shadow: 0 0 10px 5px rgba(0, 122, 255, 0.925); /* Blue */
-        border-radius: 90% 70% 40% 50%;
+        border-radius: 55% 65% 45% 60%;
     }
     10% {
         box-shadow: 0 0 12px 6px rgba(0, 217, 255, 0.762); /* Indigo */
-        border-radius: 70% 50% 80% 60%;
+        border-radius: 60% 55% 50% 65%;
     }
     20% {
         box-shadow: 0 0 14px 7px rgb(227, 52, 89); /* Red */
-        border-radius: 70% 40% 90% 60%;
+        border-radius: 60% 55% 50% 65%;
     }
     30% {
         box-shadow: 0 0 15px 8px rgb(254, 76, 0); /* Orange */
@@ -79,35 +56,34 @@ body{
     }
     40% {
         box-shadow: 0 0 12px 9px rgba(0, 255, 174, 0.925); /* Green */
-        border-radius: 80% 50% 70% 90%;
+        border-radius: 45% 60% 65% 55%;
     }
     50% {
         box-shadow: 0 0 10px 8px rgba(229, 255, 0, 0.925); /* Yellow */
-        border-radius: 60% 60% 80% 40%;
+        border-radius: 45% 60% 65% 55%;
     }
     60% {
         box-shadow: 0 0 12px 7px rgba(113, 4, 255, 0.925); /* Purple */
-        border-radius: 90% 40% 50% 70%;
+        border-radius: 50% 45% 60% 65%;
     }
     70% {
         box-shadow: 0 0 14px 6px rgba(142, 142, 147, 0.371); /* Gray */
-        border-radius: 60% 40% 70% 50%;
+        border-radius: 50% 45% 60% 65%;
     }
     80% {
         box-shadow: 0 0 15px 5px rgba(255, 45, 85, 0.925); /* Pink */
-        border-radius: 40% 80% 50% 60%;
+        border-radius: 65% 50% 55% 45%;
     }
     90% {
         box-shadow: 0 0 12px 6px rgba(90, 200, 250, 0.762); /* Light Blue */
-        border-radius: 70% 50% 40% 80%;
+        border-radius: 65% 50% 55% 45%;
     }
     100% {
         box-shadow: 0 0 10px 5px rgba(0, 122, 255, 0.925); /* Blue */
-        border-radius: 90% 70% 40% 50%;
+        border-radius: 55% 65% 45% 60%;
     }
+
 }
-
-
 
 button {
     background: linear-gradient(var(--gradient-angle), var(--gradient-color-1), var(--gradient-color-2));
@@ -116,43 +92,241 @@ button {
     animation: jello 50s infinite;
 }
 
-    @keyframes jello {
-        0% {
-            border-radius: 1rem 2rem 3rem 4rem;
-        }
-        10% {
-            border-radius: 4rem 7rem 5rem 2rem;
-        }
-        20% {
-            border-radius: 3rem 5rem 2rem 9rem;
-        }
-        30% {
-            border-radius: 5rem 4rem 7rem 2rem;
-        }
-        40% {
-            border-radius: 2rem 9rem 4rem 5rem;
-        }
-        50% {
-            border-radius: 7rem 2rem 9rem 3rem;
-        }
-        60% {
-            border-radius: 2rem 4rem 7rem 5rem;
-        }
-        70% {
-            border-radius: 5rem 9rem 3rem 2rem;
-        }
-        80% {
-            border-radius: 4rem 2rem 9rem 7rem;
-        }
-        90% {
-            border-radius: 9rem 7rem 2rem 5rem;
-        }
-        100% {
-            border-radius: 1rem 2rem 3rem 4rem;
-        }
+@keyframes jello {
+    0% {
+        border-radius: 1rem 2rem 3rem 4rem;
     }
+    10% {
+        border-radius: 4rem 7rem 5rem 2rem;
+    }
+    20% {
+        border-radius: 3rem 5rem 2rem 9rem;
+    }
+    30% {
+        border-radius: 5rem 4rem 7rem 2rem;
+    }
+    40% {
+        border-radius: 2rem 9rem 4rem 5rem;
+    }
+    50% {
+        border-radius: 7rem 2rem 9rem 3rem;
+    }
+    60% {
+        border-radius: 2rem 4rem 7rem 5rem;
+    }
+    70% {
+        border-radius: 5rem 9rem 3rem 2rem;
+    }
+    80% {
+        border-radius: 4rem 2rem 9rem 7rem;
+    }
+    90% {
+        border-radius: 9rem 7rem 2rem 5rem;
+    }
+    100% {
+        border-radius: 1rem 2rem 3rem 4rem;
+    }
+}
 
-.portfolio-button button{
+.portfolio-button {
     font-size: 1.5rem;
+}
 
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-item {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(var(--gradient-angle), var(--gradient-color-1), var(--gradient-color-2));
+}
+
+.skill-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 4rem;
+}
+
+.skill-item img {
+}
+
+/* Random % values for jello animations, all greater than 40% */
+
+@keyframes jello-html {
+    0%, 100% {
+        border-radius: 45% 55% 50% 60%;
+    }
+    20% {
+        border-radius: 50% 65% 60% 55%;
+    }
+    40% {
+        border-radius: 60% 45% 55% 65%;
+    }
+    60% {
+        border-radius: 55% 50% 65% 60%;
+    }
+    80% {
+        border-radius: 65% 60% 45% 50%;
+    }
+}
+
+@keyframes jello-css {
+    0%, 100% {
+        border-radius: 60% 50% 55% 45%;
+    }
+    20% {
+        border-radius: 65% 60% 45% 50%;
+    }
+    40% {
+        border-radius: 55% 65% 60% 50%;
+    }
+    60% {
+        border-radius: 45% 55% 65% 60%;
+    }
+    80% {
+        border-radius: 50% 45% 55% 65%;
+    }
+}
+
+@keyframes jello-js {
+    0%, 100% {
+        border-radius: 55% 65% 45% 60%;
+    }
+    20% {
+        border-radius: 60% 55% 50% 65%;
+    }
+    40% {
+        border-radius: 45% 60% 65% 55%;
+    }
+    60% {
+        border-radius: 50% 45% 60% 65%;
+    }
+    80% {
+        border-radius: 65% 50% 55% 45%;
+    }
+}
+
+@keyframes jello-react {
+    0%, 100% {
+        border-radius: 50% 60% 65% 55%;
+    }
+    20% {
+        border-radius: 55% 65% 45% 60%;
+    }
+    40% {
+        border-radius: 65% 50% 60% 55%;
+    }
+    60% {
+        border-radius: 45% 55% 50% 65%;
+    }
+    80% {
+        border-radius: 60% 45% 55% 50%;
+    }
+}
+
+@keyframes jello-git {
+    0%, 100% {
+        border-radius: 65% 55% 60% 50%;
+    }
+    20% {
+        border-radius: 60% 50% 55% 45%;
+    }
+    40% {
+        border-radius: 55% 60% 50% 65%;
+    }
+    60% {
+        border-radius: 50% 65% 55% 60%;
+    }
+    80% {
+        border-radius: 45% 60% 65% 55%;
+    }
+}
+
+@keyframes jello-sass {
+    0%, 100% {
+        border-radius: 55% 50% 45% 60%;
+    }
+    20% {
+        border-radius: 65% 55% 60% 50%;
+    }
+    40% {
+        border-radius: 50% 60% 55% 65%;
+    }
+    60% {
+        border-radius: 60% 45% 50% 55%;
+    }
+    80% {
+        border-radius: 45% 65% 55% 50%;
+    }
+}
+
+@keyframes jello-bootstrap {
+    0%, 100% {
+        border-radius: 45% 50% 55% 60%;
+    }
+    20% {
+        border-radius: 55% 45% 60% 50%;
+    }
+    40% {
+        border-radius: 50% 55% 65% 45%;
+    }
+    60% {
+        border-radius: 65% 60% 50% 55%;
+    }
+    80% {
+        border-radius: 60% 55% 45% 50%;
+    }
+}
+
+#skill-html {
+    animation: jello-html 30s infinite;
+}
+
+#skill-css {
+    animation: jello-css 30s infinite;
+}
+
+#skill-js {
+    animation: jello-js 30s infinite;
+}
+
+#skill-react {
+    animation: jello-react 30s infinite;
+}
+
+#skill-git {
+    animation: jello-git 30s infinite;
+}
+
+#skill-sass {
+    animation: jello-sass 30s infinite;
+}
+
+#skill-bootstrap {
+    animation: jello-bootstrap 30s infinite;
 }

@@ -17,8 +17,10 @@ export default function Header({toggleColor}) {
                     <li className="nav-item">Register</li>
                 </ul>
             </div>
-            <button className="connect-button">Connect With Me</button>
-            <button onClick={toggleColor}>Lights</button>
+            <div className="header-buttons">
+                <button className="connect-button">Connect With Me</button>
+                <button onClick={toggleColor}>Lights</button>
+            </div>
         </div>
     );
 }

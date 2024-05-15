@@ -1,14 +1,18 @@
 .header-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    position:fixed;
+    width: 100%;
 }
 .nav-list{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    gap: 2rem;
+}
+.header-buttons{
+    display: flex;
     gap: 2rem;
 }
