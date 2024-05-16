@@ -29,60 +29,12 @@ body {
     width: 250px;
     border-radius: 50%;
     border: 3px solid;
-    animation: aura 30s infinite;
 }
 
 .description-article{
     font-size: 1.5rem;
 }
 
-@keyframes aura {
-    0% {
-        box-shadow: 0 0 10px 5px rgba(0, 122, 255, 0.925); /* Blue */
-        border-radius: 55% 65% 45% 60%;
-    }
-    10% {
-        box-shadow: 0 0 12px 6px rgba(0, 217, 255, 0.762); /* Indigo */
-        border-radius: 60% 55% 50% 65%;
-    }
-    20% {
-        box-shadow: 0 0 14px 7px rgb(227, 52, 89); /* Red */
-        border-radius: 60% 55% 50% 65%;
-    }
-    30% {
-        box-shadow: 0 0 15px 8px rgb(254, 76, 0); /* Orange */
-        border-radius: 50% 90% 40% 70%;
-    }
-    40% {
-        box-shadow: 0 0 12px 9px rgba(0, 255, 174, 0.925); /* Green */
-        border-radius: 45% 60% 65% 55%;
-    }
-    50% {
-        box-shadow: 0 0 10px 8px rgba(229, 255, 0, 0.925); /* Yellow */
-        border-radius: 45% 60% 65% 55%;
-    }
-    60% {
-        box-shadow: 0 0 12px 7px rgba(113, 4, 255, 0.925); /* Purple */
-        border-radius: 50% 45% 60% 65%;
-    }
-    70% {
-        box-shadow: 0 0 14px 6px rgba(142, 142, 147, 0.371); /* Gray */
-        border-radius: 50% 45% 60% 65%;
-    }
-    80% {
-        box-shadow: 0 0 15px 5px rgba(255, 45, 85, 0.925); /* Pink */
-        border-radius: 65% 50% 55% 45%;
-    }
-    90% {
-        box-shadow: 0 0 12px 6px rgba(90, 200, 250, 0.762); /* Light Blue */
-        border-radius: 65% 50% 55% 45%;
-    }
-    100% {
-        box-shadow: 0 0 10px 5px rgba(0, 122, 255, 0.925); /* Blue */
-        border-radius: 55% 65% 45% 60%;
-    }
-
-}
 
 button {
     background: linear-gradient(var(--gradient-angle), var(--gradient-color-1), var(--gradient-color-2));
@@ -157,8 +109,8 @@ button {
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    aspect-ratio: 1;
     background: linear-gradient(var(--gradient-angle), var(--gradient-color-1), var(--gradient-color-2));
 }
 

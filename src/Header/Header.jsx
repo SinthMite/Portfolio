@@ -10,11 +10,9 @@ export default function Header({toggleColor}) {
             </div>
             <div className="nav-container">
                 <ul className="nav-list">
-                    <li className="nav-item">Home</li>
-                    <li className="nav-item">About</li>
-                    <li className="nav-item">Contact</li>
-                    <li className="nav-item">Login</li>
-                    <li className="nav-item">Register</li>
+                    <li className="nav-item">About Me</li>
+                    <li className="nav-item">Skills</li>
+                    <li className="nav-item">Projects</li>
                 </ul>
             </div>
             <div className="header-buttons">
