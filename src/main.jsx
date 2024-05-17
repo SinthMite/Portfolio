@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.jsx';
 import './index.css';
+import Logo from '../src/assets/Logo.png';
 
 const Root = () => {
   const [isBlack, setIsBlack] = useState(() => {
@@ -18,6 +19,10 @@ const Root = () => {
     localStorage.setItem('Color', JSON.stringify(isBlack));
   }, [isBlack]);
 
+  useEffect(() => {
+    document.title = 'Serenfants Portfolio';
+  }, []);
+
   const pageStyle = {
     background: isBlack ? 'white' : 'rgb(23,20,18)',
     color: isBlack ? 'black' : 'white',
@@ -27,7 +32,7 @@ const Root = () => {
   return (
     <div style={pageStyle}>
 
-      <App toggleColor={toggleColor}  />
+      <App toggleColor={toggleColor} />
     </div>
   );
 };
