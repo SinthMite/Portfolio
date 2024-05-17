@@ -1,15 +1,22 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Connect.css";
 
 export default function Connect({ openConnect, setOpenConnect }) {
+    const [submitted, setSubmitted] = useState(false);
     const form = useRef();
 
-    // Log the environment variables to check if they are loaded correctly
-    console.log('API Key:', import.meta.env.VITE_EMAILJS_API_KEY);
-    console.log('Service ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
-    console.log('Template ID:', import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+    useEffect(() => {
+        if (!openConnect) {
+            setSubmitted(false);
+        }
+    }, [openConnect]);
 
+    useEffect(() => {
+        if (submitted) {
+
+        }
+    }, [submitted]);
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -27,6 +34,7 @@ export default function Connect({ openConnect, setOpenConnect }) {
         )
         .then(
             (result) => {
+                setSubmitted(true);
                 console.log('SUCCESS!', result.text);
             },
             (error) => {
@@ -47,8 +55,11 @@ export default function Connect({ openConnect, setOpenConnect }) {
                         <input type="text" placeholder="Subject" name="subject" required />
                         <textarea placeholder="Message" name="message" required></textarea>
                         <input type="text" className="bait" placeholder="Leave this field empty" />
-                        <button type="submit">Send</button>
+                        <button type="submit" hidden={submitted}>Send</button>
                     </form>
+                    {submitted && (
+                        <h3 className="connect-success">Message Sent!</h3>
+                    )}
                 </div>
             )}
         </>
