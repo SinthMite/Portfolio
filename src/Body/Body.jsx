@@ -5,7 +5,7 @@ import Profile from '../assets/Profile.jpg';
 export default function Body() {
     return (
         <div className="body-container">
-            <div className="body-content">
+            <div className="body-content" id="about-me">
                 <div className="profile-content">
                     <img src={Profile} alt='Profile Picture' className="profile-picture" />
                 </div>
@@ -17,61 +17,59 @@ export default function Body() {
             <div className="portfolio-button-container">
                 <button className="portfolio-button">View My Portfolio</button>
             </div>
-            <div className="skills-container">
+            <div className="skills-container" id="skills">
                 <h3 className="skills-heading">Skills</h3>
                 <ul className="skills-list">
                     <li id="skill-html" className="skill-item">
                         <a target="_blank" href="https://icons8.com/icon/23027/html-5">
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/html-5.png" alt="HTML 5 logo" />
-                            HTML 5
                         </a>
+                        <span>HTML 5</span>
                     </li>
                     <li id="skill-css" className="skill-item">
                         <a target="_blank" href="https://icons8.com/icon/21278/css3">
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/css3.png" alt="CSS 3 logo" />
-                            CSS 3
                         </a>
+                        <span>CSS 3</span>
                     </li>
                     <li id="skill-js" className="skill-item">
                         <a target="_blank" href="https://icons8.com/icon/108784/javascript">
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/javascript.png" alt="JavaScript logo" />
-                            JavaScript
                         </a>
+                        <span>JavaScript</span>
                     </li>
                     <li id="skill-react" className="skill-item">
                         <a target="_blank" href="https://icons8.com/icon/118830/react-native">
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/react-native.png" alt="React logo" />
-                            React
                         </a>
+                        <span>React</span>
                     </li>
                     <li id="skill-git" className="skill-item">
                         <a target="_blank" href="https://icons8.com/icon/20906/git">
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/git.png" alt="Git logo" />
-                            Git
                         </a>
+                        <span>Git</span>
                     </li>
                     <li id="skill-sass" className="skill-item">
                         <a target="_blank" href="https://icons8.com/icon/21278/sass">
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/sass.png" alt="Sass logo" />
-                            Sass
                         </a>
+                        <span>Sass</span>
                     </li>
                     <li id="skill-bootstrap" className="skill-item">
                         <a target="_blank" href="https://icons8.com/icon/21278/bootstrap">
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/bootstrap.png" alt="Bootstrap logo" />
-                            Bootstrap
                         </a>
+                        <span>Bootstrap</span>
                     </li>
                     <li id="skill-firebase" className="skill-item">
                         <a target="_blank" href="https://icons8.com/icon/21278/firebase">
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/firebase.png" alt="Firebase logo" />
-                            Firebase
                         </a>
+                        <span>Firebase</span>
                     </li>
                 </ul>
-
-</div>
-
-</div>
+            </div>
+        </div>
     );
 }

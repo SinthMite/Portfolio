@@ -10,7 +10,9 @@
 body {
     font-family: 'Arial Narrow Bold', sans-serif;
 }
-
+a{
+    color: inherit;
+}
 
 .body-content span {
     background: linear-gradient(var(--gradient-angle), var(--gradient-color-1), var(--gradient-color-2));
@@ -105,14 +107,6 @@ button {
     justify-content: center;
 }
 
-.skill-item {
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
-    width: 150px;
-    aspect-ratio: 1;
-    background: linear-gradient(var(--gradient-angle), var(--gradient-color-1), var(--gradient-color-2));
-}
 
 .skill-item a {
     display: flex;
@@ -127,7 +121,22 @@ button {
 }
 
 /* Random % values for jello animations, all greater than 40% */
-
+@media (max-width: 600px) {
+    .skill-item{
+        margin: 1rem;
+    }
+    
+}
+@media (min-width: 445px) {
+    .skill-item {
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        width: 150px;
+        aspect-ratio: 1;
+        background: linear-gradient(var(--gradient-angle), var(--gradient-color-1), var(--gradient-color-2));
+    }
+}
 @keyframes jello-html {
     0%, 100% {
         border-radius: 45% 55% 50% 60%;
