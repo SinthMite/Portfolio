@@ -5,6 +5,7 @@ import "./Connect.css";
 export default function Connect({ openConnect, setOpenConnect }) {
     const [submitted, setSubmitted] = useState(false);
     const form = useRef();
+    const containerRef = useRef();
 
     useEffect(() => {
         if (!openConnect) {
@@ -17,6 +18,20 @@ export default function Connect({ openConnect, setOpenConnect }) {
 
         }
     }, [submitted]);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (containerRef.current && !containerRef.current.contains(event.target)) {
+                setOpenConnect(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [setOpenConnect]);
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -46,7 +61,7 @@ export default function Connect({ openConnect, setOpenConnect }) {
     return (
         <>
             {openConnect && (
-                <div className="connect-container">
+                <div className="connect-container" ref={containerRef}>
                     <button className="close-button" onClick={() => setOpenConnect(false)}>X</button>
                     <h2 className="connect-title">Connect With Me</h2>
                     <form ref={form} onSubmit={sendEmail}>

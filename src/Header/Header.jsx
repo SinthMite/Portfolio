@@ -1,10 +1,11 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import "./Header.css";
 import Logo from '../assets/Logo.png';
 export default function Header({ toggleColor, setOpenConnect }) {
     const Opener = () =>{
         setOpenConnect(prevState=>!prevState)
     }
+    
     return (
         <div className="header-container">
             <div className="logo-container">
