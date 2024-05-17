@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Header.css";
 import Logo from '../assets/Logo.png';
-
-export default function Header({ toggleColor }) {
+export default function Header({ toggleColor, setOpenConnect }) {
+    const Opener = () =>{
+        setOpenConnect(prevState=>!prevState)
+    }
     return (
         <div className="header-container">
             <div className="logo-container">
@@ -22,7 +24,7 @@ export default function Header({ toggleColor }) {
                 </ul>
             </div>
             <div className="header-buttons">
-                <button className="connect-button">Connect With Me</button>
+                <button className="connect-button" onClick={Opener}>Connect With Me</button>
                 <button onClick={toggleColor}>Lights</button>
             </div>
         </div>

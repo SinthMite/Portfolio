@@ -19,8 +19,8 @@ const Root = () => {
   }, [isBlack]);
 
   const pageStyle = {
-    background: isBlack ? 'rgb(23,20,18)' : 'white',
-    color: isBlack ? 'white' : 'black',
+    background: isBlack ? 'white' : 'rgb(23,20,18)',
+    color: isBlack ? 'black' : 'white',
     height: '100%'
   };
 

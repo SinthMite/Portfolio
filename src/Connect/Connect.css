@@ -1,0 +1,55 @@
+.connect-container{
+    width: 50vw;
+    position: absolute;
+    transform: translate(50%);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+
+}
+
+.connect-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.connect-container form input{
+    width: 70%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.29);
+    outline: none;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+}
+
+.connect-container textarea{
+    width: 80%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.29);
+    outline: none;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+}
+
+.connect-container input::placeholder, .connect-container textarea::placeholder{
+    color: inherit;
+}

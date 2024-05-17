@@ -21,51 +21,51 @@ export default function Body() {
                 <h3 className="skills-heading">Skills</h3>
                 <ul className="skills-list">
                     <li id="skill-html" className="skill-item">
-                        <a target="_blank" href="https://icons8.com/icon/23027/html-5">
+                        <div>
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/html-5.png" alt="HTML 5 logo" />
-                        </a>
+                        </div>
                         <span>HTML 5</span>
                     </li>
                     <li id="skill-css" className="skill-item">
-                        <a target="_blank" href="https://icons8.com/icon/21278/css3">
+                        <div>
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/css3.png" alt="CSS 3 logo" />
-                        </a>
+                        </div>
                         <span>CSS 3</span>
                     </li>
                     <li id="skill-js" className="skill-item">
-                        <a target="_blank" href="https://icons8.com/icon/108784/javascript">
+                        <div>
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/javascript.png" alt="JavaScript logo" />
-                        </a>
+                        </div>
                         <span>JavaScript</span>
                     </li>
                     <li id="skill-react" className="skill-item">
-                        <a target="_blank" href="https://icons8.com/icon/118830/react-native">
+                        <div>
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/react-native.png" alt="React logo" />
-                        </a>
+                        </div>
                         <span>React</span>
                     </li>
                     <li id="skill-git" className="skill-item">
-                        <a target="_blank" href="https://icons8.com/icon/20906/git">
+                        <div>
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/git.png" alt="Git logo" />
-                        </a>
+                        </div>
                         <span>Git</span>
                     </li>
                     <li id="skill-sass" className="skill-item">
-                        <a target="_blank" href="https://icons8.com/icon/21278/sass">
+                        <div>
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/sass.png" alt="Sass logo" />
-                        </a>
+                        </div>
                         <span>Sass</span>
                     </li>
                     <li id="skill-bootstrap" className="skill-item">
-                        <a target="_blank" href="https://icons8.com/icon/21278/bootstrap">
+                        <div>
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/bootstrap.png" alt="Bootstrap logo" />
-                        </a>
+                        </div>
                         <span>Bootstrap</span>
                     </li>
                     <li id="skill-firebase" className="skill-item">
-                        <a target="_blank" href="https://icons8.com/icon/21278/firebase">
+                        <div>
                             <img src="https://img.icons8.com/ios-filled/50/ffffff/firebase.png" alt="Firebase logo" />
-                        </a>
+                        </div>
                         <span>Firebase</span>
                     </li>
                 </ul>

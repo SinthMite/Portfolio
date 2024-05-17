@@ -6,20 +6,46 @@
     --background-clip: text;
     --text-color: transparent;
 }
+
 html {
-    scroll-behavior:smooth;
-  }
-  a {
+    scroll-behavior: smooth;
+}
+
+a {
     color: inherit; /* Ensure the link inherits the text color */
     text-decoration: inherit; /* Inherit text decoration */
-  }
-  a:visited {
+}
+
+a:visited {
     color: inherit; /* Ensure the link doesn't change color after being visited */
-  }
+}
+
 body {
     font-family: 'Arial Narrow Bold', sans-serif;
 }
 
+@keyframes slideIn {
+    from {
+        transform: translateY(-25%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the body element when the slide-in class is added */
+body.slide-in {
+    animation: slideIn 500ms ease-in-out;
+}
+
+/* Optional: Ensure the body has a default state before the animation */
+body {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
 
 @keyframes gradient-animation {
     0% {
@@ -47,6 +73,7 @@ body {
     color: var(--text-color);
     animation: gradient-animation 5s infinite ease-in-out;
 }
+
 .body-content p {
     font-size: 3rem;
     font-weight: 700;
@@ -59,10 +86,9 @@ body {
     border: 3px solid;
 }
 
-.description-article{
+.description-article {
     font-size: 1.5rem;
 }
-
 
 button {
     background: linear-gradient(var(--gradient-angle), var(--gradient-color-1), var(--gradient-color-2));
@@ -133,8 +159,7 @@ button {
     justify-content: center;
 }
 
-
-.skill-item a {
+.skill-item div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,11 +173,11 @@ button {
 
 /* Random % values for jello animations, all greater than 40% */
 @media (max-width: 600px) {
-    .skill-item{
+    .skill-item {
         margin: 1rem;
     }
-    
 }
+
 @media (min-width: 445px) {
     .skill-item {
         padding: 1rem;
@@ -163,6 +188,7 @@ button {
         background: linear-gradient(var(--gradient-angle), var(--gradient-color-1), var(--gradient-color-2));
     }
 }
+
 @keyframes jello-html {
     0%, 100% {
         border-radius: 45% 55% 50% 60%;
