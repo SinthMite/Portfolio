@@ -20,16 +20,20 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm install
 
       - name: Build project
-        run: npm run build
+        run: |
+          echo "VITE_EMAILJS_API_KEY=${{ secrets.VITE_EMAILJS_API_KEY }}" >> $GITHUB_ENV
+          echo "VITE_EMAILJS_SERVICE_ID=${{ secrets.VITE_EMAILJS_SERVICE_ID }}" >> $GITHUB_ENV
+          echo "VITE_EMAILJS_TEMPLATE_ID=${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}" >> $GITHUB_ENV
+          npm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
           name: production-files
-          path: ./dist
+          path: ./build # For Create React App, the build output directory is typically ./build
 
   deploy:
     name: Deploy
@@ -38,14 +42,17 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
           name: production-files
-          path: ./dist
+          path: ./build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./build

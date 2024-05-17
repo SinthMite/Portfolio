@@ -53,3 +53,7 @@
 .connect-container input::placeholder, .connect-container textarea::placeholder{
     color: inherit;
 }
+
+.bait{
+    display: none;
+}

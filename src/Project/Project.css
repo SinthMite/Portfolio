@@ -28,15 +28,22 @@
     height: auto;
     border-radius: 8px;
 }
+.project-textHolding{
+    display: flex;
+    flex-direction: row;
+}
 
 .project-description {
     font-size: 1em;
     margin-bottom: 20px;
+    width: 50%;
 }
 
 .project-features {
     list-style-type: none;
     padding: 0;
+    width: 50%;
+
 }
 
 .project-features li {
