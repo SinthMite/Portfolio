@@ -12,16 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-html {
-  scroll-behavior:smooth;
-}
-.nav-item a {
-  color: inherit; /* Ensure the link inherits the text color */
-  text-decoration: inherit; /* Inherit text decoration */
-}
-.nav-item a:visited {
-  color: inherit; /* Ensure the link doesn't change color after being visited */
-}
+
 
 body {
 

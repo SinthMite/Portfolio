@@ -1,6 +1,6 @@
 import React from "react";
 import './Body.css';
-import Profile from '../assets/Profile.jpg';
+import Profile from '../assets/Profile.jpeg';
 
 export default function Body() {
     return (
@@ -15,7 +15,7 @@ export default function Body() {
                 <p className="description-text">I am a passionate developer from northern Jersey, specializing in web development. I excel in creatively tackling problems and continuously learning new approaches. My enthusiasm for coding and commitment to professional growth drive me to deliver innovative solutions.</p>
             </article>
             <div className="portfolio-button-container">
-                <button className="portfolio-button">View My Portfolio</button>
+                <button className="portfolio-button"><a href="#projects">View My Potfolio</a></button>
             </div>
             <div className="skills-container" id="skills">
                 <h3 className="skills-heading">Skills</h3>

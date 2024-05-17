@@ -6,21 +6,47 @@
     --background-clip: text;
     --text-color: transparent;
 }
-
+html {
+    scroll-behavior:smooth;
+  }
+  a {
+    color: inherit; /* Ensure the link inherits the text color */
+    text-decoration: inherit; /* Inherit text decoration */
+  }
+  a:visited {
+    color: inherit; /* Ensure the link doesn't change color after being visited */
+  }
 body {
     font-family: 'Arial Narrow Bold', sans-serif;
 }
-a{
-    color: inherit;
+
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-.body-content span {
+.name-highlight {
     background: linear-gradient(var(--gradient-angle), var(--gradient-color-1), var(--gradient-color-2));
+    background-size: 200% 200%;
     -webkit-background-clip: var(--webkit-background-clip);
     background-clip: var(--background-clip);
     color: var(--text-color);
+    animation: gradient-animation 5s infinite ease-in-out;
 }
-
 .body-content p {
     font-size: 3rem;
     font-weight: 700;
@@ -114,7 +140,7 @@ button {
     justify-content: center;
     text-decoration: none;
     color: inherit;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
 }
 
 .skill-item img {
