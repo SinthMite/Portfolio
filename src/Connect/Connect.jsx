@@ -5,8 +5,10 @@ import "./Connect.css";
 export default function Connect({ openConnect, setOpenConnect }) {
     const form = useRef();
 
-    // Log the environment variable to check if it's loaded
+    // Log the environment variables to check if they are loaded correctly
     console.log('API Key:', import.meta.env.VITE_EMAILJS_API_KEY);
+    console.log('Service ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
+    console.log('Template ID:', import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
 
     const sendEmail = (e) => {
         e.preventDefault();
