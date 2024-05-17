@@ -9,7 +9,7 @@ export default function Project() {
             <h2 className="project-title">Projects</h2>
         
             <div className="project-item">
-                <h3 className="project-name">FlavorQuest</h3>
+                <h3 className="project-name">Test FlavorQuest</h3>
                 <img src={FlavorQuest} alt="FlavorQuest" className="project-image" />
                 <div className="project-textHolding">
                 <article className="project-description">
