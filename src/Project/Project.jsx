@@ -2,7 +2,8 @@ import React from "react";
 import './Project.css';
 import StormAtlas from '../assets/StormAtlas.png';
 import FlavorQuest from '../assets/FlavorQuest.png';
-import NourishPaw from '../assets/Nourish.mp4'
+import NourishPaw from '../assets/Nourish.mp4';
+
 export default function Project() {
     return (
         <div className="project-container">
@@ -11,6 +12,10 @@ export default function Project() {
             <div className="project-item">
                 <h3 className="project-name">NourishPaw</h3>
                 <video src={NourishPaw} className="project-image" autoPlay muted loop playsInline></video>
+                <div className="project-links">
+                    <a href="https://main--nourishpaw.netlify.app/" target="_blank" rel="noopener noreferrer">Live Project</a> | 
+                    <a href="https://github.com/SinthMite/NourishPaw" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                </div>
                 <div className="project-textHolding">
                     <article className="project-description">
                         <h3>Summary</h3>
