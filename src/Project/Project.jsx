@@ -2,7 +2,7 @@ import React from "react";
 import './Project.css';
 import StormAtlas from '../assets/StormAtlas.png';
 import FlavorQuest from '../assets/FlavorQuest.png';
-import NourishPaw from '../assets/NourishPaw.png'
+import NourishPaw from '../assets/Nourish.mp4'
 export default function Project() {
     return (
         <div className="project-container">
@@ -10,7 +10,7 @@ export default function Project() {
 
             <div className="project-item">
                 <h3 className="project-name">NourishPaw</h3>
-                <img src={NourishPaw} alt="NourishPaw" className="project-image" />
+                <video src={NourishPaw} className="project-image" autoPlay muted loop playsInline></video>
                 <div className="project-textHolding">
                     <article className="project-description">
                         <h3>Summary</h3>
