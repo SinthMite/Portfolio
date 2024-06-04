@@ -3,7 +3,7 @@ import './Project.css';
 import StormAtlas from '../assets/StormAtlas.png';
 import FlavorQuest from '../assets/FlavorQuest.png';
 import NourishPaw from '../assets/Nourish.mp4';
-
+import Storm from '../assets/Storm.mp4'
 export default function Project() {
     return (
         <div className="project-container">
@@ -34,6 +34,24 @@ export default function Project() {
                     </ul>
                 </div>
             </div>
+            <div className="project-item">
+                <h3 className="project-name">StormAtlas</h3>
+                <video src={Storm} className="project-image" autoPlay muted loop playsInline></video>                
+                <div className="project-textHolding">
+                    <article className="project-description">
+                        <h3>Summary</h3>
+                        <p>"StormAtlas" is a React-based web application that allows users to track weather conditions, view earthquake occurrences, and analyze weather trends. It integrates with external APIs to fetch real-time weather data and relevant news articles. The use of interactive maps enhances the user experience by visualizing geographical data effectively.</p>
+                    </article>
+                    <ul className="project-features">
+                        <h3>Features</h3>
+                        <li>React</li>
+                        <li>React Router</li>
+                        <li>React Leaflet</li>
+                        <li>API Integration</li>
+                        <li>CSS Styling</li>
+                    </ul>
+                </div>
+            </div>
 
             <div className="project-item">
                 <h3 className="project-name">FlavorQuest</h3>
@@ -53,25 +71,6 @@ export default function Project() {
                         <li>Material-UI</li>
                         <li>React Router</li>
                         <li>Local Storage</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className="project-item">
-                <h3 className="project-name">StormAtlas</h3>
-                <img src={StormAtlas} alt="StormAtlas" className="project-image" />
-                <div className="project-textHolding">
-                    <article className="project-description">
-                        <h3>Summary</h3>
-                        <p>"StormAtlas" is a React-based web application that allows users to track weather conditions, view earthquake occurrences, and analyze weather trends. It integrates with external APIs to fetch real-time weather data and relevant news articles. The use of interactive maps enhances the user experience by visualizing geographical data effectively.</p>
-                    </article>
-                    <ul className="project-features">
-                        <h3>Features</h3>
-                        <li>React</li>
-                        <li>React Router</li>
-                        <li>React Leaflet</li>
-                        <li>API Integration</li>
-                        <li>CSS Styling</li>
                     </ul>
                 </div>
             </div>
