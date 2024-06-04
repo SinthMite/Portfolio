@@ -1,6 +1,7 @@
 import React from "react";
 import './Body.css';
 import Profile from '../assets/Profile.jpeg';
+import firebase from '../assets/firebase.png'
 
 export default function Body() {
     return (
@@ -62,9 +63,9 @@ export default function Body() {
                         </div>
                         <span>Bootstrap</span>
                     </li>
-                    <li id="skill-firebase" className="skill-item">
-                        <div>
-                            <img src="https://img.icons8.com/ios-filled/50/ffffff/firebase.png" alt="Firebase logo" />
+                    <li id="skill-bootstrap" className="skill-item">
+                    <div>
+                            <img src={firebase} alt="Firebase logo" />
                         </div>
                         <span>Firebase</span>
                     </li>

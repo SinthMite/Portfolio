@@ -169,6 +169,7 @@ button {
 }
 
 .skill-item img {
+    width: 75px;
 }
 
 /* Random % values for jello animations, all greater than 40% */
@@ -341,4 +342,7 @@ button {
 
 #skill-bootstrap {
     animation: jello-bootstrap 30s infinite;
+}
+#skill-firebase{
+    animation: jello-firebase 30s infinite;
 }
