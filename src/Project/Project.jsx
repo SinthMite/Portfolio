@@ -36,7 +36,11 @@ export default function Project() {
             </div>
             <div className="project-item">
                 <h3 className="project-name">StormAtlas</h3>
-                <video src={Storm} className="project-image" autoPlay muted loop playsInline></video>                
+                <video src={Storm} className="project-image" autoPlay muted loop playsInline></video>
+                <div className="project-links">
+                    <a href="https://sinthmite.github.io/StormAtlas/" target="_blank" rel="noopener noreferrer">Live Project</a> | 
+                    <a href="https://github.com/SinthMite/StormAtlas" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                </div>                
                 <div className="project-textHolding">
                     <article className="project-description">
                         <h3>Summary</h3>
